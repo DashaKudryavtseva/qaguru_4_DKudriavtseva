@@ -1,7 +1,8 @@
 import math
 import random
 
-#done
+
+# done
 def test_greeting():
     """
     Напишите программу, которая выводит на экран приветствие.
@@ -13,7 +14,9 @@ def test_greeting():
     output = "Привет, " + name + "! Тебе " + str(age) + " лет."
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
-#done
+
+
+# done
 def test_rectangle():
     """
     Напишите программу, которая берет длину и ширину прямоугольника
@@ -29,7 +32,9 @@ def test_rectangle():
     area = 0
     area = a * b
     assert area == 200
-#done
+
+
+# done
 def test_circle():
     """
     Напишите программу, которая берет радиус круга и выводит на экран его длину и площадь.
@@ -44,21 +49,21 @@ def test_circle():
     length = 0
     length = math.pi * r * 2
     assert length == 144.51326206513048
-#done
+
+
+# done
 def test_random_list():
     """
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
     # TODO создайте список
-    l = []
-    i = 0
-    while i < 10:
-        l.append(random.randint(1, 100))
-        i += 1
+    l = [random.randint(1, 100) for element in range(10)]
     l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
-#done
+
+
+# done
 def test_unique_elements():
     """
     Удалите из списка все повторяющиеся элементы
@@ -70,7 +75,9 @@ def test_unique_elements():
     assert isinstance(l, list)
     assert len(l) == 10
     assert l == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-#done
+
+
+# done
 def test_dicts():
     """
     Создайте словарь из двух списков.
