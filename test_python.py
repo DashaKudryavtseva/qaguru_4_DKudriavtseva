@@ -69,7 +69,7 @@ def test_unique_elements():
     assert isinstance(l, list)
     assert len(l) == 10
     assert l == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+#done
 def test_dicts():
     """
     Создайте словарь из двух списков.
@@ -80,6 +80,9 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
+
     d = {}
+    d = dict(zip(first, second))
+
     assert isinstance(d, dict)
     assert len(d) == 5
